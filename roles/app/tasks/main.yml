@@ -1,0 +1,12 @@
+---
+- name: Upload website archive
+  copy:
+    src: "{{ playbook_dir }}/2137_barista_cafe.zip"
+    dest: /tmp/2137_barista_cafe.zip
+
+- name: Extract website archive
+  unarchive:
+    src: /tmp/2137_barista_cafe.zip
+    dest: /var/www/html/
+    remote_src: yes
+

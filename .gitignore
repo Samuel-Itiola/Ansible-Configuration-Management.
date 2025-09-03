@@ -1,0 +1,22 @@
+# =========================================
+# Ignore sensitive files
+# =========================================
+ansiblekey.pem       # AWS EC2 private key
+*.key                # Any other private keys
+
+# Ignore OS and editor files
+*.DS_Store
+*~
+*.swp
+*.swo
+
+# Python / virtual environment (if used)
+venv/
+.env
+__pycache__/
+*.pyc
+
+# Ansible retry/log files
+*.retry
+*.log
+

@@ -1,0 +1,6 @@
+---
+- name: Add SSH public key
+  authorized_key:
+    user: ubuntu
+    key: "{{ lookup('file', '{{ playbook_dir }}/id_ed25519.pub') }}"
+
