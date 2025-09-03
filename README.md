@@ -9,6 +9,9 @@ It provisions a Linux server on AWS (or any cloud provider), installs required p
 
 ---
 
+## Project url  https://roadmap.sh/projects/configuration-management
+
+
 ## 🚀 Features
 - **Base role**: Updates server, installs utilities, sets up security tools like fail2ban.
 - **Nginx role**: Installs and configures Nginx to serve a static site.
@@ -48,4 +51,5 @@ ansible-server-setup/
     ├── nginx/             # Nginx installation & configuration
     ├── app/               # Website deployment
     └── ssh/               # SSH key management
+
 
